@@ -10,11 +10,11 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSMutableDictionary *Students = [NSMutableDictionary new];
+        NSMutableDictionary *Students = [NSMutableDictionary dictionary];
+        NSDictionary *Activities = [NSDictionary dictionaryWithObjects:@[@"basketball",@"floor hockey",@"arts",@"checkers"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n"]];
+        NSString *act = [[NSString alloc] init];
         char name[20];
-        char activity[15];
         char numb[3];
-
         
         for(;;){
             NSLog(@"Attendance");
@@ -53,28 +53,13 @@ int main(int argc, const char * argv[]) {
             
             for(;;){
                 fgets(numb, sizeof(numb), stdin);
-                
-                if (strcmp(numb,"1\n")==0) {
-                    strcpy(activity, "basketball");
+                NSString *numbb = [NSString stringWithCString:numb encoding:NSUTF8StringEncoding];
+                if([Activities objectForKey:numbb] != nil){
+                    act = [Activities objectForKey:numbb];
                     break;
-                }
-                else if(strcmp(numb,"2\n")==0){
-                    strcpy(activity, "floor hockey");
-                    break;
-                }
-                else if(strcmp(numb,"3\n")==0){
-                    strcpy(activity, "arts");
-                    break;
-                }
-                else if(strcmp(numb,"4\n")==0){
-                    strcpy(activity, "checkers");
-                    break;
-                }
-                else{
                 }
             }
             NSString *nem = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
-            NSString *act = [NSString stringWithCString:activity encoding:NSUTF8StringEncoding];
             [Students setObject:act forKey:nem];
         }
     }
