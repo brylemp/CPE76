@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSMutableDictionary *Students = [NSMutableDictionary dictionary];
+        NSMutableDictionary *Students = [[NSMutableDictionary alloc] init];
         NSDictionary *Activities = [NSDictionary dictionaryWithObjects:@[@"basketball",@"floor hockey",@"arts",@"checkers"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n"]];
         NSString *act = [[NSString alloc] init];
         char name[20];

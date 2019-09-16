@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSMutableArray *Students = [NSMutableArray new];
+        NSMutableArray *Students = [[NSMutableArray alloc] init];
         
         for(;;){
             char name[20];

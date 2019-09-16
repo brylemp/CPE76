@@ -15,85 +15,90 @@
 
 @implementation EmployeeShirt
     
--(NSString*) sName{
+-(NSString*) inputName{
     char name[50];
     printf("Enter Name: ");
     fgets(name,sizeof(name),stdin);
     name[strlen(name)-1]='\0';
-    NSString *nsName = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
-    return nsName;
+    NSString *inName = [NSString stringWithCString:name encoding:NSUTF8StringEncoding];
+    return inName;
 }
 
--(NSString*) sGender{
+-(NSString*) inputGender{
+    NSDictionary *Genders = [NSDictionary dictionaryWithObjects:@[@"Male",@"Female"] forKeys:@[@"1\n",@"2\n"]];
     char gender[5];
-    NSString *nsGender= [NSString stringWithCString:gender encoding:NSUTF8StringEncoding];
-    printf("M for male; F for Female\n");
+    printf("1 for Male\n");
+    printf("2 for Female\n");
     printf("Enter Gender: ");
     for(;;){
         fgets(gender,sizeof(gender),stdin);
-        
-        if(strcmp("M\n",gender)==0){
-            nsGender = @"Male";
+        NSString *genderr = [NSString stringWithCString:gender encoding:NSUTF8StringEncoding];
+        if([Genders objectForKey:genderr] != nil){
+            return [Genders objectForKey:genderr];
             break;
-        }
-        else if(strcmp("F\n",gender)==0){
-            nsGender = @"Female";
-            break;
-        }
-        else{
         }
     }
-    return nsGender;
 }
 
--(NSString*) sColor{
+-(NSString*) inputColor{
     char color[10];
     printf("Enter Color: ");
     fgets(color,sizeof(color),stdin);
     color[strlen(color)-1]='\0';
-    NSString *nsColor = [NSString stringWithCString:color encoding:NSUTF8StringEncoding];
-    return nsColor;
+    NSString *inColor = [NSString stringWithCString:color encoding:NSUTF8StringEncoding];
+    return inColor;
 }
 
--(NSString*) sQuote{
+-(NSString*) inputSize{
+    NSDictionary *Sizes = [NSDictionary dictionaryWithObjects:@[@"Extra Small",@"Small",@"Medium",@"Large",@"Extra Large"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n",@"5\n"]];
+    char size[5];
+    printf("1 for Extra Small\n");
+    printf("2 for Small\n");
+    printf("3 for Medium\n");
+    printf("4 for Large\n");
+    printf("5 for Extra Large\n");
+    printf("Enter Size: ");
+    for(;;){
+        fgets(size,sizeof(size),stdin);
+        NSString *sizee = [NSString stringWithCString:size encoding:NSUTF8StringEncoding];
+        if([Sizes objectForKey:sizee] != nil){
+            return [Sizes objectForKey:sizee];
+            break;
+        }
+    }
+}
+
+-(NSString*) inputQuote{
+    NSDictionary *Quotes = [NSDictionary dictionaryWithObjects:@[@"After a storm comes a calm.",@"Be kind whenever possible. It is always possible",@"Have faith in your abilities."] forKeys:@[@"1\n",@"2\n",@"3\n"]];
     char quote[5];
-    NSString *nsQuote = [NSString stringWithCString:quote encoding:NSUTF8StringEncoding];
+    printf("1 for \"After a storm comes a calm.\"\n");
+    printf("2 for \"Be kind whenever possible. It is always possible\"\n");
+    printf("3 for \"Have faith in your abilities.\"\n");
     printf("Enter Quote: ");
     for(;;){
         fgets(quote,sizeof(quote),stdin);
-        
-        if(strcmp("1\n", quote)==0){
-            nsQuote = @"After a storm comes a calm.";
+        NSString *quotee = [NSString stringWithCString:quote encoding:NSUTF8StringEncoding];
+        if([Quotes objectForKey:quotee] != nil){
+            return [Quotes objectForKey:quotee];
             break;
-        }
-        else if(strcmp("2\n", quote)==0){
-            nsQuote = @"Be kind whenever possible. It is always possible";
-            break;
-        }
-        else if(strcmp("3\n", quote)==0){
-            nsQuote = @"Have faith in your abilities";
-            break;
-        }
-        else{
         }
     }
-    return nsQuote;
 }
--(NSString*) sSize{
-    char size[5];
-    printf("Enter Size: ");
-    fgets(size,sizeof(size),stdin);
-    size[strlen(size)-1]='\0';
-    NSString *nsSize = [NSString stringWithCString:size encoding:NSUTF8StringEncoding];
-    return nsSize;
-}
--(NSString*) sLocation{
+
+-(NSString*) inputLocation{
+    NSDictionary *Locations = [NSDictionary dictionaryWithObjects:@[@"Front",@"Back"] forKeys:@[@"1\n",@"2\n"]];
     char location[10];
+    printf("1 for Front\n");
+    printf("2 for Back\n");
     printf("Enter Location: ");
-    fgets(location,sizeof(location),stdin);
-    location[strlen(location)-1]='\0';
-    NSString *nsLocation = [NSString stringWithCString:location encoding:NSUTF8StringEncoding];
-    return nsLocation;
+    for(;;){
+        fgets(location,sizeof(location),stdin);
+        NSString *locationn = [NSString stringWithCString:location encoding:NSUTF8StringEncoding];
+        if([Locations objectForKey:locationn] != nil){
+            return [Locations objectForKey:locationn];
+            break;
+        }
+    }
 }
 
 @end

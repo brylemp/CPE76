@@ -23,12 +23,12 @@
 @property NSString *size;
 @property NSString *location;
 
--(NSString*) sName;
--(NSString*) sGender;
--(NSString*) sQuote;
--(NSString*) sColor;
--(NSString*) sSize;
--(NSString*) sLocation;
+-(NSString*) inputName;
+-(NSString*) inputGender;
+-(NSString*) inputColor;
+-(NSString*) inputSize;
+-(NSString*) inputQuote;
+-(NSString*) inputLocation;
 
 @end
 
