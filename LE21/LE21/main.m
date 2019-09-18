@@ -15,9 +15,14 @@ int main(int argc, const char * argv[]) {
         int totalorder = 0;
         
         for (;;) {
-            printf("Total Number of Orders = %d\n",totalorder);
-            printf("Order Summary\n");
-            printf("Order Number\tName\t\t\t\tGender\tColor\tSize\t     Quote\t\t\t\t\t\t\t\t\t\t\t\tLocation\n");
+            if(totalorder == 0){
+                printf("No orders yet\n");
+            }
+            else{
+                printf("Total Number of Orders = %d\n",totalorder);
+                printf("Order Summary\n");
+                printf("Order Number\tName\t\t\t\tGender\tColor\tSize\t     Quote\t\t\t\t\t\t\t\t\t\t\t\tLocation\n");
+            }
             for(EmployeeShirt *employee in employees){
                 int fon = employee.ordernum;
                 NSString *fname = employee.name;
@@ -29,6 +34,8 @@ int main(int argc, const char * argv[]) {
 
                 printf("%-16d%-20s%-8s%-8s%-13s%-51s%s\n", fon, [fname UTF8String], [fgender UTF8String], [fcolor UTF8String], [fsize UTF8String], [fquote UTF8String], [flocation UTF8String]);
             }
+            printf("===================================================================\n");
+            
             totalorder++;
             
             EmployeeShirt *anEmployee = [[EmployeeShirt alloc] init];

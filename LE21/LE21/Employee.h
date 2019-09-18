@@ -12,6 +12,8 @@
 
 @property NSString *name;
 @property NSString *gender;
+-(NSString*) inputName;
+-(NSString*) inputGender;
 
 @end
 
@@ -23,8 +25,7 @@
 @property NSString *size;
 @property NSString *location;
 
--(NSString*) inputName;
--(NSString*) inputGender;
+
 -(NSString*) inputColor;
 -(NSString*) inputSize;
 -(NSString*) inputQuote;

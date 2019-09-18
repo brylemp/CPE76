@@ -10,11 +10,6 @@
 
 @implementation Employee
 
-
-@end
-
-@implementation EmployeeShirt
-    
 -(NSString*) inputName{
     char name[50];
     printf("Enter Name: ");
@@ -40,23 +35,35 @@
     }
 }
 
+
+@end
+
+@implementation EmployeeShirt
+
 -(NSString*) inputColor{
-    char color[10];
+    NSDictionary *Colors = [NSDictionary dictionaryWithObjects:@[@"Red",@"Green",@"Black",@"Blue"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n"]];
+    char color[5];
+    printf("1 for Red\n");
+    printf("2 for Green\n");
+    printf("3 for Black\n");
+    printf("4 for Blue\n");
     printf("Enter Color: ");
-    fgets(color,sizeof(color),stdin);
-    color[strlen(color)-1]='\0';
-    NSString *inColor = [NSString stringWithCString:color encoding:NSUTF8StringEncoding];
-    return inColor;
+    for(;;){
+        fgets(color,sizeof(color),stdin);
+        NSString *colorr = [NSString stringWithCString:color encoding:NSUTF8StringEncoding];
+        if([Colors objectForKey:colorr] != nil){
+            return [Colors objectForKey:colorr];
+            break;
+        }
+    }
 }
 
 -(NSString*) inputSize{
-    NSDictionary *Sizes = [NSDictionary dictionaryWithObjects:@[@"Extra Small",@"Small",@"Medium",@"Large",@"Extra Large"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n",@"5\n"]];
+    NSDictionary *Sizes = [NSDictionary dictionaryWithObjects:@[@"Small",@"Medium",@"Large"] forKeys:@[@"1\n",@"2\n",@"3\n"]];
     char size[5];
-    printf("1 for Extra Small\n");
-    printf("2 for Small\n");
-    printf("3 for Medium\n");
-    printf("4 for Large\n");
-    printf("5 for Extra Large\n");
+    printf("1 for Small\n");
+    printf("2 for Medium\n");
+    printf("3 for Large\n");
     printf("Enter Size: ");
     for(;;){
         fgets(size,sizeof(size),stdin);
@@ -87,7 +94,7 @@
 
 -(NSString*) inputLocation{
     NSDictionary *Locations = [NSDictionary dictionaryWithObjects:@[@"Front",@"Back"] forKeys:@[@"1\n",@"2\n"]];
-    char location[10];
+    char location[5];
     printf("1 for Front\n");
     printf("2 for Back\n");
     printf("Enter Location: ");
