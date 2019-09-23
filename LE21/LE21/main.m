@@ -24,15 +24,7 @@ int main(int argc, const char * argv[]) {
                 printf("Order Number\tName\t\t\t\tGender\tColor\tSize\t     Quote\t\t\t\t\t\t\t\t\t\t\t\tLocation\n");
             }
             for(EmployeeShirt *employee in employees){
-                int fon = employee.ordernum;
-                NSString *fname = employee.name;
-                NSString *fgender = employee.gender;
-                NSString *fcolor = employee.color;
-                NSString *fsize = employee.size;
-                NSString *fquote = employee.quote;
-                NSString *flocation = employee.location;
-
-                printf("%-16d%-20s%-8s%-8s%-13s%-51s%s\n", fon, [fname UTF8String], [fgender UTF8String], [fcolor UTF8String], [fsize UTF8String], [fquote UTF8String], [flocation UTF8String]);
+                printf("%-16d%-20s%-8s%-8s%-13s%-51s%s\n", (int)employee.ordernum, [(NSString*)employee.name UTF8String], [(NSString*)employee.gender UTF8String], [(NSString*)employee.color UTF8String], [(NSString*)employee.size UTF8String], [(NSString*)employee.quote UTF8String], [(NSString*)employee.location UTF8String]);
             }
             printf("===================================================================\n");
             
