@@ -25,7 +25,7 @@
 @property NSString *size;
 @property NSString *location;
 
-
+//-(id)initName: (NSString*) aName Gender: (NSString*) aGender; //Constructor
 -(NSString*) inputColor;
 -(NSString*) inputSize;
 -(NSString*) inputQuote;

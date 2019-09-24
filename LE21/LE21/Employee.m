@@ -40,6 +40,16 @@
 
 @implementation EmployeeShirt
 
+//-(id)initName: (NSString*) aName Gender: (NSString*) aGender{ //Constructor
+//    self = [super init];
+//    if (self) {
+//        self.name = aName;
+//        self.gender = aGender;
+//    }
+//    return self;
+//}
+
+
 -(NSString*) inputColor{
     NSDictionary *Colors = [NSDictionary dictionaryWithObjects:@[@"Red",@"Green",@"Black",@"Blue"] forKeys:@[@"1\n",@"2\n",@"3\n",@"4\n"]];
     char color[5];
