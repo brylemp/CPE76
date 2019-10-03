@@ -15,8 +15,6 @@
 		B1003587233F026D005937E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1003585233F026D005937E0 /* LaunchScreen.storyboard */; };
 		B1003592233F026D005937E0 /* LE31x8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1003591233F026D005937E0 /* LE31x8Tests.m */; };
 		B100359D233F026D005937E0 /* LE31x8UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B100359C233F026D005937E0 /* LE31x8UITests.m */; };
-		B10035AC233F02F7005937E0 /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = B10035AA233F02F7005937E0 /* mac.png */; };
-		B10035AD233F02F7005937E0 /* mac2.png in Resources */ = {isa = PBXBuildFile; fileRef = B10035AB233F02F7005937E0 /* mac2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +51,6 @@
 		B1003598233F026D005937E0 /* LE31x8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LE31x8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B100359C233F026D005937E0 /* LE31x8UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LE31x8UITests.m; sourceTree = "<group>"; };
 		B100359E233F026D005937E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B10035AA233F02F7005937E0 /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mac.png; path = ../../../../Desktop/mac.png; sourceTree = "<group>"; };
-		B10035AB233F02F7005937E0 /* mac2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mac2.png; path = ../../../../Desktop/mac2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +107,6 @@
 				B100357E233F026D005937E0 /* ViewController.m */,
 				B1003580233F026D005937E0 /* Main.storyboard */,
 				B1003583233F026D005937E0 /* Assets.xcassets */,
-				B10035AA233F02F7005937E0 /* mac.png */,
-				B10035AB233F02F7005937E0 /* mac2.png */,
 				B1003585233F026D005937E0 /* LaunchScreen.storyboard */,
 				B1003588233F026D005937E0 /* Info.plist */,
 				B1003577233F026D005937E0 /* Supporting Files */,
@@ -232,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -253,10 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1003587233F026D005937E0 /* LaunchScreen.storyboard in Resources */,
-				B10035AD233F02F7005937E0 /* mac2.png in Resources */,
 				B1003584233F026D005937E0 /* Assets.xcassets in Resources */,
 				B1003582233F026D005937E0 /* Main.storyboard in Resources */,
-				B10035AC233F02F7005937E0 /* mac.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +508,7 @@
 				B10035A3233F026D005937E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B10035A4233F026D005937E0 /* Build configuration list for PBXNativeTarget "LE31x8Tests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +517,7 @@
 				B10035A6233F026D005937E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B10035A7233F026D005937E0 /* Build configuration list for PBXNativeTarget "LE31x8UITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +526,7 @@
 				B10035A9233F026D005937E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

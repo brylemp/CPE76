@@ -9,8 +9,6 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UISwitch *Sw;
-@property (weak, nonatomic) IBOutlet UIImageView *Im;
 
 @end
 
@@ -19,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _Im.image = [UIImage imageNamed:@"mac.png"];
 }
 
 
@@ -28,15 +25,56 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)Sw:(id)sender {
-    if(_Sw.isOn){
-        _Im.image = [UIImage imageNamed:@"mac.png"];
+- (IBAction)Add:(id)sender {
+    if(![_In1 hasText] || ![_In2 hasText] ){
+        _Equ.text = @"ERROR";
     }
     else{
-        _Im.image = [UIImage imageNamed:@"mac2.png"];
+        float input1 = [_In1.text floatValue];
+        float input2 = [_In2.text floatValue];
+        float result = input1 + input2;
+        NSString *resultS = [NSString stringWithFormat:@"%.2f", result];
+        _Equ.text = resultS;
     }
 }
 
+- (IBAction)Subt:(id)sender {
+    if(![_In1 hasText] || ![_In2 hasText] ){
+        _Equ.text = @"ERROR";
+    }
+    else{
+        float input1 = [_In1.text floatValue];
+        float input2 = [_In2.text floatValue];
+        float result = input1 - input2;
+        NSString *resultS = [NSString stringWithFormat:@"%.2f", result];
+        _Equ.text = resultS;
+    }
+}
 
+- (IBAction)Mult:(id)sender {
+    if(![_In1 hasText] || ![_In2 hasText] ){
+        _Equ.text = @"ERROR";
+    }
+    else{
+        float input1 = [_In1.text floatValue];
+        float input2 = [_In2.text floatValue];
+        float result = input1 * input2;
+        NSString *resultS = [NSString stringWithFormat:@"%.2f", result];
+        _Equ.text = resultS;
+    }
+}
+
+- (IBAction)Div:(id)sender {
+    if(![_In1 hasText] || ![_In2 hasText] ){
+        _Equ.text = @"ERROR";
+    }
+    else{
+        float input1 = [_In1.text floatValue];
+        float input2 = [_In2.text floatValue];
+        float result = input1 / input2;
+        NSString *resultS = [NSString stringWithFormat:@"%.2f", result];
+        _Equ.text = resultS;
+    }
+}
 
 @end
