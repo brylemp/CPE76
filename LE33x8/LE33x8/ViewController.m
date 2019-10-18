@@ -2,8 +2,8 @@
 //  ViewController.m
 //  LE33x8
 //
-//  Created by PATALINGHUG BRYLE on 12/10/2019.
-//  Copyright © 2019 PATALINGHUG BRYLE. All rights reserved.
+//  Created by Bryle Patalinghug on 18/10/2019.
+//  Copyright © 2019 Bryle Patalinghug. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -16,14 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)Calculate:(id)sender {
     float w = [_Weight.text floatValue];
@@ -48,5 +43,8 @@
     }
     _BMIfactor.text = [NSString stringWithFormat:@"%.2f", res];
 }
+
+
+
 
 @end
