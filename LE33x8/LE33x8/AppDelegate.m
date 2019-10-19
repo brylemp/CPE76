@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  LE33x8
 //
-//  Created by Bryle Patalinghug on 18/10/2019.
-//  Copyright © 2019 Bryle Patalinghug. All rights reserved.
+//  Created by PATALINGHUG BRYLE on 19/10/2019.
+//  Copyright © 2019 PATALINGHUG BRYLE. All rights reserved.
 //
 
 #import "AppDelegate.h"
