@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CDBE022239A8524005110DD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDBE021239A8524005110DD /* SecondViewController.m */; };
+		9CDBE024239AA864005110DD /* beep-01a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE023239AA864005110DD /* beep-01a.wav */; };
+		9CDBE028239AAA11005110DD /* pup3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE025239AAA10005110DD /* pup3.jpg */; };
+		9CDBE029239AAA11005110DD /* pup2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE026239AAA10005110DD /* pup2.jpg */; };
+		9CDBE02A239AAA11005110DD /* pup1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBE027239AAA11005110DD /* pup1.jpg */; };
 		B187BA02237F9E8700BCD759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B187BA01237F9E8700BCD759 /* main.m */; };
 		B187BA05237F9E8700BCD759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B187BA04237F9E8700BCD759 /* AppDelegate.m */; };
 		B187BA08237F9E8700BCD759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B187BA07237F9E8700BCD759 /* ViewController.m */; };
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CDBE020239A8524005110DD /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9CDBE021239A8524005110DD /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9CDBE023239AA864005110DD /* beep-01a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-01a.wav"; sourceTree = "<group>"; };
+		9CDBE025239AAA10005110DD /* pup3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pup3.jpg; sourceTree = "<group>"; };
+		9CDBE026239AAA10005110DD /* pup2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pup2.jpg; sourceTree = "<group>"; };
+		9CDBE027239AAA11005110DD /* pup1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pup1.jpg; sourceTree = "<group>"; };
 		B187B9FD237F9E8700BCD759 /* PF1x8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PF1x8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B187BA01237F9E8700BCD759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B187BA03237F9E8700BCD759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,11 +112,17 @@
 		B187B9FF237F9E8700BCD759 /* PF1x8 */ = {
 			isa = PBXGroup;
 			children = (
+				9CDBE027239AAA11005110DD /* pup1.jpg */,
+				9CDBE026239AAA10005110DD /* pup2.jpg */,
+				9CDBE025239AAA10005110DD /* pup3.jpg */,
+				9CDBE023239AA864005110DD /* beep-01a.wav */,
 				B187BA03237F9E8700BCD759 /* AppDelegate.h */,
 				B187BA04237F9E8700BCD759 /* AppDelegate.m */,
 				B187BA06237F9E8700BCD759 /* ViewController.h */,
 				B187BA07237F9E8700BCD759 /* ViewController.m */,
 				B187BA09237F9E8700BCD759 /* Main.storyboard */,
+				9CDBE020239A8524005110DD /* SecondViewController.h */,
+				9CDBE021239A8524005110DD /* SecondViewController.m */,
 				B187BA0C237F9E8700BCD759 /* Assets.xcassets */,
 				B187BA0E237F9E8700BCD759 /* LaunchScreen.storyboard */,
 				B187BA11237F9E8700BCD759 /* Info.plist */,
@@ -248,8 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B187BA10237F9E8700BCD759 /* LaunchScreen.storyboard in Resources */,
+				9CDBE028239AAA11005110DD /* pup3.jpg in Resources */,
+				9CDBE02A239AAA11005110DD /* pup1.jpg in Resources */,
 				B187BA0D237F9E8700BCD759 /* Assets.xcassets in Resources */,
 				B187BA0B237F9E8700BCD759 /* Main.storyboard in Resources */,
+				9CDBE029239AAA11005110DD /* pup2.jpg in Resources */,
+				9CDBE024239AA864005110DD /* beep-01a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDBE022239A8524005110DD /* SecondViewController.m in Sources */,
 				B187BA08237F9E8700BCD759 /* ViewController.m in Sources */,
 				B187BA05237F9E8700BCD759 /* AppDelegate.m in Sources */,
 				B187BA02237F9E8700BCD759 /* main.m in Sources */,
