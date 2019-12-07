@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B187B9FC237F9E8700BCD759"
-               BuildableName = "LE43x8.app"
-               BlueprintName = "LE43x8"
-               ReferencedContainer = "container:LE43x8.xcodeproj">
+               BlueprintIdentifier = "B1CDBD1B239B2F5E00D79CC4"
+               BuildableName = "PF1.app"
+               BlueprintName = "PF1"
+               ReferencedContainer = "container:PF1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B187BA15237F9E8700BCD759"
-               BuildableName = "LE43x8Tests.xctest"
-               BlueprintName = "LE43x8Tests"
-               ReferencedContainer = "container:LE43x8.xcodeproj">
+               BlueprintIdentifier = "B1CDBD34239B2F5E00D79CC4"
+               BuildableName = "PF1Tests.xctest"
+               BlueprintName = "PF1Tests"
+               ReferencedContainer = "container:PF1.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B187BA20237F9E8700BCD759"
-               BuildableName = "LE43x8UITests.xctest"
-               BlueprintName = "LE43x8UITests"
-               ReferencedContainer = "container:LE43x8.xcodeproj">
+               BlueprintIdentifier = "B1CDBD3F239B2F5E00D79CC4"
+               BuildableName = "PF1UITests.xctest"
+               BlueprintName = "PF1UITests"
+               ReferencedContainer = "container:PF1.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B187B9FC237F9E8700BCD759"
-            BuildableName = "LE43x8.app"
-            BlueprintName = "LE43x8"
-            ReferencedContainer = "container:LE43x8.xcodeproj">
+            BlueprintIdentifier = "B1CDBD1B239B2F5E00D79CC4"
+            BuildableName = "PF1.app"
+            BlueprintName = "PF1"
+            ReferencedContainer = "container:PF1.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B187B9FC237F9E8700BCD759"
-            BuildableName = "LE43x8.app"
-            BlueprintName = "LE43x8"
-            ReferencedContainer = "container:LE43x8.xcodeproj">
+            BlueprintIdentifier = "B1CDBD1B239B2F5E00D79CC4"
+            BuildableName = "PF1.app"
+            BlueprintName = "PF1"
+            ReferencedContainer = "container:PF1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B187B9FC237F9E8700BCD759"
-            BuildableName = "LE43x8.app"
-            BlueprintName = "LE43x8"
-            ReferencedContainer = "container:LE43x8.xcodeproj">
+            BlueprintIdentifier = "B1CDBD1B239B2F5E00D79CC4"
+            BuildableName = "PF1.app"
+            BlueprintName = "PF1"
+            ReferencedContainer = "container:PF1.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

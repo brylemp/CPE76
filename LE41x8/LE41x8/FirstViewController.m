@@ -36,10 +36,10 @@
 }
 
 - (IBAction)maleb:(id)sender {
-    _morf1 = 1;
+    _morf1 = 0;
 }
 
 - (IBAction)femaleb:(id)sender {
-    _morf1 = 0;
+    _morf1 = 1;
 }
 @end

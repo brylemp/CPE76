@@ -1,18 +1,18 @@
 //
-//  LE43x8Tests.m
-//  LE43x8Tests
+//  PF1Tests.m
+//  PF1Tests
 //
-//  Created by PATALINGHUG BRYLE on 16/11/2019.
+//  Created by PATALINGHUG BRYLE on 07/12/2019.
 //  Copyright © 2019 PATALINGHUG BRYLE. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface LE43x8Tests : XCTestCase
+@interface PF1Tests : XCTestCase
 
 @end
 
-@implementation LE43x8Tests
+@implementation PF1Tests
 
 - (void)setUp {
     [super setUp];

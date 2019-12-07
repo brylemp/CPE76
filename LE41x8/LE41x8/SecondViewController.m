@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "SuggestViewController.h"
 
 @interface SecondViewController ()
 
@@ -20,14 +21,21 @@
     _test.text = [NSString stringWithFormat:@"%d", _morf2];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    SuggestViewController *vc2 = [segue destinationViewController];
+    vc2.iora2 = _iora1;
+    vc2.morf3 = _morf2;
 }
-*/
 
+- (IBAction)infantB:(id)sender {
+    _iora1 = 0;
+}
+
+- (IBAction)adolB:(id)sender {
+    _iora1 = 1;
+}
+
+- (IBAction)adultB:(id)sender {
+    _iora1 = 2;
+}
 @end

@@ -16,17 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if(_iora2==0 && _morf3==0){
+        _textView.text = @"Toy trucks, Blanket";
+    }
+    else if(_iora2==0 && _morf3==1){
+        _textView.text = @"Doll, Blanket";
+    }
+    else if(_iora2==1 && _morf3==0){
+        _textView.text = @"Baseball Jersey";
+    }
+    else if(_iora2==1 && _morf3==1){
+        _textView.text = @"Softball Jersey";
+    }
+    else if(_iora2==2 && _morf3==0){
+        _textView.text = @"Tie, Watch";
+    }
+    else if(_iora2==2 && _morf3==1){
+        _textView.text = @"Earrings, Watch";
+    }
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

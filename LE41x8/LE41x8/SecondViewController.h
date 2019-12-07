@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) int morf2;
 @property (assign, nonatomic) int iora1;
 @property (weak, nonatomic) IBOutlet UITextView *test;
+- (IBAction)infantB:(id)sender;
+- (IBAction)adolB:(id)sender;
+- (IBAction)adultB:(id)sender;
+
+
 
 @end
 

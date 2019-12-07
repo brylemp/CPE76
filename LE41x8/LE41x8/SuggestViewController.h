@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SuggestViewController : UIViewController
+@property (assign, nonatomic) int iora2;
+@property (assign, nonatomic) int morf3;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
