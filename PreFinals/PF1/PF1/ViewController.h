@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ViewController : UIViewController
-
+- (IBAction)SW1:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *SwitchValue;
+@property int picVal;
+@property int numTrial;
+- (void)BEEP;
+@property (weak, nonatomic) IBOutlet UIImageView *initpic;
 
 @end
 

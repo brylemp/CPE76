@@ -15,35 +15,36 @@
 @implementation SecondViewController
 
 - (void)viewDidLoad {
+    
+    NSArray *DOW = @[@"Sunday", @"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", @"Saturday"];
+    
     [super viewDidLoad];
-    if (_dayofweek2 == 0){
-        _dayofweekview.text = @"Invalid";
-    }
-    else if(_dayofweek2 == 1){
+    _dayofweekview.text = DOW[_dayofweek2];
+    if(_dayofweek2 == 0){
         self.view.backgroundColor = [UIColor blackColor];
         _dayofweekview.text = @"Sunday";
     }
-    else if(_dayofweek2 == 2){
+    else if(_dayofweek2 == 1){
         self.view.backgroundColor = [UIColor blueColor];
         _dayofweekview.text = @"Monday";
     }
-    else if(_dayofweek2 == 3){
+    else if(_dayofweek2 == 2){
         self.view.backgroundColor = [UIColor greenColor];
         _dayofweekview.text = @"Tuesday";
     }
-    else if(_dayofweek2 == 4){
+    else if(_dayofweek2 == 3){
         self.view.backgroundColor = [UIColor cyanColor];
         _dayofweekview.text = @"Wednesday";
     }
-    else if(_dayofweek2 == 5){
+    else if(_dayofweek2 == 4){
         self.view.backgroundColor = [UIColor redColor];
         _dayofweekview.text = @"Thursday";
     }
-    else if(_dayofweek2 == 6){
+    else if(_dayofweek2 == 5){
         self.view.backgroundColor = [UIColor purpleColor];
         _dayofweekview.text = @"Friday";
     }
-    else if(_dayofweek2 == 7){
+    else if(_dayofweek2 == 6){
         self.view.backgroundColor = [UIColor whiteColor];
         _dayofweekview.text = @"Saturday";
     }
