@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    SecondViewController *vc = [segue destinationViewController];    
+    vc.dayofweek2 = [_dayofweek1.text integerValue];
+    vc.dayofweek2 = vc.dayofweek2+1;
+}
 
+- (IBAction)submit:(id)sender {
+}
 @end
