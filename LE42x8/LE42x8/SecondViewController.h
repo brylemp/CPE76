@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int RedVal;
 @property int GreenVal;
 @property int BlueVal;
+
 @end
 
 NS_ASSUME_NONNULL_END
