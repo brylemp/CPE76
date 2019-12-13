@@ -11,8 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *dayofweekview;
-@property int dayofweek2;
+@property int RedVal;
+@property int GreenVal;
+@property int BlueVal;
 @end
 
 NS_ASSUME_NONNULL_END

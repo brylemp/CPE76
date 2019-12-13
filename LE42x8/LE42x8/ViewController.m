@@ -26,12 +26,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    SecondViewController *vc = [segue destinationViewController];    
-    vc.dayofweek2 = [_dayofweek1.text integerValue];
-    vc.dayofweek2 = vc.dayofweek2+1;
+    SecondViewController *vc = [segue destinationViewController];
+    if(_RedVal.isOn){
+        vc.RedVal = 1;
+    }
+    else{
+        vc.RedVal = 0;
+    }
+    
+    if(_GreenVal.isOn){
+        vc.GreenVal = 1;
+    }
+    else{
+        vc.GreenVal = 0;
+    }
+    
+    if(_BlueVal.isOn){
+        vc.BlueVal = 1;
+    }
+    else{
+        vc.BlueVal = 0;
+    }
+    
 }
 
-- (IBAction)submit:(id)sender {
-}
+
+
 @end

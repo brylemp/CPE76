@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *dayofweek1;
-- (IBAction)submit:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *RedVal;
+@property (weak, nonatomic) IBOutlet UISwitch *GreenVal;
+@property (weak, nonatomic) IBOutlet UISwitch *BlueVal;
 
 
 @end

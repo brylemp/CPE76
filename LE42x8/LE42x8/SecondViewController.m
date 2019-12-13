@@ -16,43 +16,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    if (_dayofweek2 == 0){
-        _dayofweekview.text = @"Invalid";
-    }
-    else if(_dayofweek2 == 1){
+    if(_RedVal == 0 && _GreenVal == 0 && _BlueVal == 0){
         self.view.backgroundColor = [UIColor blackColor];
-        _dayofweekview.text = @"Sunday";
     }
-    else if(_dayofweek2 == 2){
+    else if(_RedVal == 0 && _GreenVal == 0 && _BlueVal == 1){
         self.view.backgroundColor = [UIColor blueColor];
-        _dayofweekview.text = @"Monday";
     }
-    else if(_dayofweek2 == 3){
+    else if(_RedVal == 0 && _GreenVal == 1 && _BlueVal == 0){
         self.view.backgroundColor = [UIColor greenColor];
-        _dayofweekview.text = @"Tuesday";
     }
-    else if(_dayofweek2 == 4){
+    else if(_RedVal == 0 && _GreenVal == 1 && _BlueVal == 1){
         self.view.backgroundColor = [UIColor cyanColor];
-        _dayofweekview.text = @"Wednesday";
     }
-    else if(_dayofweek2 == 5){
+    else if(_RedVal == 1 && _GreenVal == 0 && _BlueVal == 0){
         self.view.backgroundColor = [UIColor redColor];
-        _dayofweekview.text = @"Thursday";
     }
-    else if(_dayofweek2 == 6){
-        self.view.backgroundColor = [UIColor purpleColor];
-        _dayofweekview.text = @"Friday";
+    else if(_RedVal == 1 && _GreenVal == 0 && _BlueVal == 1){
+        self.view.backgroundColor = [UIColor magentaColor];
     }
-    else if(_dayofweek2 == 7){
+    else if(_RedVal == 1 && _GreenVal == 1 && _BlueVal == 0){
+        self.view.backgroundColor = [UIColor yellowColor];
+    }
+    else if(_RedVal == 1 && _GreenVal == 1 && _BlueVal == 1){
         self.view.backgroundColor = [UIColor whiteColor];
-        _dayofweekview.text = @"Saturday";
     }
-    else{
-        _dayofweekview.text = @"Invalid";
-    }
-    
 }
-
-
 
 @end
